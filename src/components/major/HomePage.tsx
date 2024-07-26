@@ -25,9 +25,9 @@ const HomePage : React.FC = () => {
   }
 
   return (
-    <main className="bg-[radial-gradient(circle,#fcd26f,#f7b83f,#f7a31f)] flex min-h-screen flex-col items-center">
+    <main className="bg-[radial-gradient(circle,#fcd26f,#f7b83f,#f7a31f)] flex min-h-screen max-h-screen flex-col items-center overflow-scroll no-scrollbar">
         <Navbar/>
-        <div className="w-[100%] min-h-[90vh] p-16 pt-2 lg:p-24">
+        <div className="w-[100%] min-h-[90vh] p-16 pt-2 lg:p-24 overflow-scroll no-scrollbar">
           {
             renderContent()
           }
